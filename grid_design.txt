@@ -1,15 +1,22 @@
- --- --- ---
-|   |   |   |
-|   |   |   |
-|   |   |   |
- --- --- ---
-|   |   |   |
-|   |   |   |
-|   |   |   |
- --- --- ---
-|   |   |   |
-|   |   |   |
-|   |   |   |
- --- --- ---
+ - - -
+| | | |
+ - - -
+| | | |
+ - - -
+| | | |
+ - - -
 
- // 8 puzzle grid design
+// 8 puzzle grid design
+// the numbers which indicates the elements will be insinde like below
+
+ - - -
+|1|2|3|
+ - - -
+|4|5|6|
+ - - -
+|7|8| |
+ - - -
+
+// this will work for small grid, but won't work with 4x4 and 5x5
+// due to two digit slide index, we have to find other way to
+// represent the sliding tiles indexes
