@@ -1,22 +1,71 @@
- - - -
-| | | |
- - - -
-| | | |
- - - -
-| | | |
- - - -
+ --- --- --- ---
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+ --- --- --- ---
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+ --- --- --- ---
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+ --- --- --- ---
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+ --- --- --- ---
 
-// 8 puzzle grid design
-// the numbers which indicates the elements will be insinde like below
+// in case of 4x4 and 5x5 grid better solution would be
+// the grid wide enough to store two digits slides indexes
 
- - - -
-|1|2|3|
- - - -
-|4|5|6|
- - - -
-|7|8| |
- - - -
+// below is example of solved 4x4 slide puzze
 
-// this will work for small grid, but won't work with 4x4 and 5x5
-// due to two digit slide index, we have to find other way to
-// represent the sliding tiles indexes
+ --- --- --- ---
+|   |   |   |   |
+| 1 | 2 | 3 | 4 |
+|   |   |   |   |
+ --- --- --- ---
+|   |   |   |   |
+| 5 | 6 | 7 | 8 |
+|   |   |   |   |
+ --- --- --- ---
+|   |   |   |   |
+| 9 | 10| 11| 12|
+|   |   |   |   |
+ --- --- --- ---
+|   |   |   |   |
+| 13| 14| 15|   |
+|   |   |   |   |
+ --- --- --- ---
+
+// below is example of solved 5x5 slide puzzle
+
+ --- --- --- --- ---
+|   |   |   |   |   |
+| 1 | 2 | 3 | 4 | 5 |
+|   |   |   |   |   |
+ --- --- --- --- ---
+|   |   |   |   |   |
+| 6 | 7 | 8 | 9 | 10|
+|   |   |   |   |   |
+ --- --- --- --- ---
+|   |   |   |   |   |
+| 11| 12| 13| 14| 15|
+|   |   |   |   |   |
+ --- --- --- --- ---
+|   |   |   |   |   |
+| 16| 17| 18| 19| 20|
+|   |   |   |   |   |
+ --- --- --- --- ---
+|   |   |   |   |   |
+| 21| 22| 23| 24|   |
+|   |   |   |   |   |
+ --- --- --- --- ---
+
+// that design is far from being perfect, but
+// overall is readable enough to be acceptable
+
+
+
+
