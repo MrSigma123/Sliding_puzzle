@@ -1,0 +1,15 @@
+/* Sliding_puzzle project design */
+
+Welcome message
+  Main menu
+    1. 3x3 grid
+    2. 4x4 grid
+    3. 5x5 grid
+
+
+implement move counter
+save best score in the file
+  (or each best score in separate files for 3x3, 4x4, 5x5)
+
+if the cerain puzzle is solved highlight it green
+if the puzzle is unsolved highlight it red
