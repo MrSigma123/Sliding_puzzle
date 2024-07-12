@@ -1,5 +1,6 @@
 /* functions definitions for Sliding_puzzle project */
 void logo(void);
+void modes(void);
 void puzzle8(void);
 void puzzle15(void);
 void puzzle24(void);

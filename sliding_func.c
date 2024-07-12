@@ -13,7 +13,39 @@ void logo(void) {
   printf("       `.__.'`.__;:_;`.__.':_;:_;:_;`._. ; _____:_;   `.__.'`.___;`.___;`.__;`.__.'\n");
   printf("                                     .-. ::_____:                                  \n");
   printf("                                     `._.'                                         \n");
-  printf("\n\n\n\n\n\n\n\n\n");
+  printf("\n\n\n\n\n\n\n");
+  printf("                              PRESS ENTER TO CONTINUE: ");
+  getchar();
+}
+void modes(void) {
+  int choice;
+  system("clear");
+  printf("\n\n\n\n\n\n\n");
+  printf("                              Welcome to Sliding_Puzzle !!!\n");
+  printf("\n\n\n");
+  printf("                                 Choose the program mode:\n");
+  printf("\n");
+  printf("                                   1.  8 slide puzzle\n");
+  printf("                                   2. 15 slide puzzle\n");
+  printf("                                   3. 24 slide puzzle\n");
+  printf("\n");
+  printf("                                   0. Exit the program\n");
+  printf("\n\n\n");
+  printf("                          Type the digit and confirm with ENTER: ");
+  scanf("%d", &choice);
+  switch (choice) {
+    case 1 :
+      puzzle8();
+      break;
+    case 2 :
+      puzzle15();
+      break;
+    case 3 :
+      puzzle24();
+      break;
+    case 0 :
+      break;
+  }
 }
 void puzzle8(void) {}
 void puzzle15(void) {}
