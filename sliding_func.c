@@ -1,5 +1,16 @@
 /* functions definitions for Sliding_puzzle project */
-void logo(void) {}
+#include "sliding_func.h"
+#include <stdio.h>
+void logo(void) {
+  printf(" .--. .-.   _    .-. _                   .---.                   .-.        \n");
+  printf(": .--': :  :_;   : ::_;                  : .; :                  : :        \n");
+  printf("`. `. : :  .-. .-' :.-.,-.,-. .--.       :  _.'.-..-..---. .---. : :   .--. \n");
+  printf(" _`, :: :_ : :' .; :: :: ,. :' .; :      : :   : :; :`-'_.'`-'_.': :_ ' '_.'\n");
+  printf("`.__.'`.__;:_;`.__.':_;:_;:_;`._. ; _____:_;   `.__.'`.___;`.___;`.__;`.__.'\n");
+  printf("                              .-. ::_____:                                  \n");
+  printf("                              `._.'                                         \n");
+  printf("\n");
+}
 void puzzle8(void) {}
 void puzzle15(void) {}
 void puzzle24(void) {}
