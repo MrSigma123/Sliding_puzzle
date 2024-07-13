@@ -47,9 +47,25 @@ void modes(void) {
       break;
   }
 }
-void puzzle8(void) {}
-void puzzle15(void) {}
-void puzzle24(void) {}
+void puzzle8(void) {
+  while (1) {
+    printf("Do you want to play puzzle8 again? If yes type Y letter: ");
+    char repeat;
+    scanf("%c", &repeat);
+    if (repeat != 'Y')
+      break;
+  }
+}
+void puzzle15(void) {
+  while (1) {
+
+  }
+}
+void puzzle24(void) {
+  while (1) {
+
+  }
+}
 void l_turn(char turn) {
   return; 
 }
