@@ -58,12 +58,20 @@ void puzzle8(void) {
 }
 void puzzle15(void) {
   while (1) {
-
+    printf("Do you want to play puzzle15 again? If yes type Y letter: ");
+    char repeat;
+    scanf("%c", &repeat);
+    if (repeat != 'Y')
+      break;
   }
 }
 void puzzle24(void) {
   while (1) {
-
+    printf("Do you want to play puzzle24 again? If yes type Y letter: ");
+    char repeat;
+    scanf("%c", &repeat);
+    if (repeat != 'Y')
+      break;
   }
 }
 void l_turn(char turn) {
