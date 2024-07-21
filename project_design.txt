@@ -8,8 +8,10 @@ Welcome message
 
 
 implement move counter
-save best score in the file
+save best score in the file (depending on the mode go to certain high score)
   (or each best score in separate files for 3x3, 4x4, 5x5)
 
-if the cerain puzzle is solved highlight it green
-if the puzzle is unsolved highlight it red
+if the certain puzzle piece is solved highlight it with green color
+if the puzzle piece is unsolved highlight it with red color
+add the timer second counter which will appear after solve
+  (the score might be evaluated by a formula [invent one])
