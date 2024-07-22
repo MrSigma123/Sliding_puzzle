@@ -51,7 +51,8 @@ void puzzle8(void) {
   int puzzle_state_array[3][3] = {
     {1 ,2, 3},
     {4, 5, 6},
-    {7, 8, 9} };
+    {7, 8, 9}
+  };
   while (1) {
     printf("Do you want to play puzzle8 again? If yes type Y letter: ");
     char repeat;
@@ -61,6 +62,12 @@ void puzzle8(void) {
   }
 }
 void puzzle15(void) {
+  int puzzle_state_array[4][4] = {
+    {1 , 2 , 3 , 4 },
+    {5 , 6 , 7 , 8 },
+    {9 , 10, 11, 12},
+    {13, 14, 15, 0 }
+  };
   while (1) {
     printf("Do you want to play puzzle15 again? If yes type Y letter: ");
     char repeat;
