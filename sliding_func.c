@@ -48,6 +48,10 @@ void modes(void) {
   }
 }
 void puzzle8(void) {
+  int puzzle_state_array[3][3] = {
+    {1 ,2, 3},
+    {4, 5, 6},
+    {7, 8, 9} };
   while (1) {
     printf("Do you want to play puzzle8 again? If yes type Y letter: ");
     char repeat;
