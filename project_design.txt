@@ -15,3 +15,12 @@ if the certain puzzle piece is solved highlight it with green color
 if the puzzle piece is unsolved highlight it with red color
 add the timer second counter which will appear after solve
   (the score might be evaluated by a formula [invent one])
+
+To make cross platform version of this program we have to include
+various header files dependent on the operating system on which
+the program is running. It'll require conditional compilation.
+
+TASK: Take the character without confirmation with ENTER.
+  - to do that we need to use special system libraries.
+  It's conio.h on WINDOWS and unistd.h and termios.h on 
+  UNIX based systems.
