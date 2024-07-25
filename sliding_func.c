@@ -2,6 +2,13 @@
 #include "sliding_func.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+#define PUZZLE8_SCRAMBLE_LIMIT 50
+#define PUZZLE8_SIZE 3
+#define PUZZLE15_SCRAMBLE_LIMIT 150
+#define PUZZLE15_SIZE 4
+#define PUZZLE24_SCRAMBLE_LIMIT 300
+#define PUZZLE24_SIZE 5
 void logo(void) {
   system("clear");
   printf("software version 0.1.0\n");
@@ -48,12 +55,21 @@ void modes(void) {
   }
 }
 void puzzle8(void) {
-  int puzzle_state_array[3][3] = {
+  int move; // 1, 2, 3, 4 which stands for l, r, u, d moves
+  int puzzle_state_array[PUZZLE8_SIZE][PUZZLE8_SIZE] = {
     {1 ,2, 3},
     {4, 5, 6},
     {7, 8, 0}
   };
   while (1) {
+    int scramble_count = 0;
+    while (scramble_count < PUZZLE8_SCRAMBLE_LIMIT) {
+      srand(time(NULL));
+      move = rand() % 4 + 1;
+      switch (move) {
+        case 1: l_turn(puzzle_state_array, PUZZLE8_SIZE);
+      }
+    }
     printf("Do you want to play puzzle8 again? If yes type Y letter: ");
     char repeat;
     scanf("%c", &repeat);
@@ -92,15 +108,15 @@ void puzzle24(void) {
       break;
   }
 }
-void l_turn(char turn) {
+void l_turn(int * array, int size) {
   return; 
 }
-void r_turn(char turn) {
+void r_turn(int * array, int size) {
   return;
 }
-void u_turn(char turn) {
+void u_turn(int * array, int size) {
   return;
 }
-void d_turn(char turn) {
+void d_turn(int * array, int size) {
   return;
 }
