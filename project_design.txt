@@ -24,3 +24,5 @@ TASK: Take the character without confirmation with ENTER.
   - to do that we need to use special system libraries.
   It's conio.h on WINDOWS and unistd.h and termios.h on 
   UNIX based systems.
+
+  tip: IMPLEMENT BOTH with preprocessor directives for different OS'es
